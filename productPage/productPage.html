@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Allen's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #FF4B38;
+            --secondary-color: #2A2A2A;
+            --accent-color: #FF6B6B;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .navbar {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar-brand {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar-brand img {
+            height: 35px;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-size: 1rem;
+            padding: 0.5rem 1rem !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .search-form {
+            flex-grow: 1;
+            max-width: 500px;
+            margin: 0 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border: 1px solid #ddd;
+            border-radius: 80px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .nav-icon {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-icon:hover {
+            color: var(--primary-color);
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 992px) {
+            .nav-item.dropdown:hover .dropdown-menu {
+                display: block;
+            }
+
+            .navbar-nav {
+                flex-direction: row;
+            }
+
+            .navbar-nav .nav-item {
+                margin-right: 1rem;
+            }
+
+            .search-form {
+                margin: 0 2rem;
+            }
+
+            .nav-icons {
+                margin-top: 0;
+            }
+        }
+
+        /*Scrollable Menu Code*/
+        .scrollable-menu {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        /* For Webkit browsers like Chrome and Safari */
+        .scrollable-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .scrollable-menu::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .scrollable-menu::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 3px;
+        }
+
+        .scrollable-menu::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* For Firefox */
+        .scrollable-menu {
+            scrollbar-width: thin;
+            scrollbar-color: #888 #f1f1f1;
+        }
+
+        /*Hover Effect Code*/
+        .navbar-brand {
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 10px;
+        }
+
+        .footer .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        .product-section {
+            padding: 4rem 0;
+        }
+
+        .product-carousel {
+            margin-bottom: 2rem;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .product-description {
+            margin-bottom: 2rem;
+        }
+
+        .btn-add-to-cart, .btn-buy-now {
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-add-to-cart {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-add-to-cart:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        .btn-buy-now {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-buy-now:hover {
+            background-color: #444;
+            border-color: #444;
+        }
+
+        .product-features {
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: var(--primary-color);
+        }
+
+        #loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        #error {
+            display: none;
+            color: red;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .variant-options {
+            margin-bottom: 1rem;
+        }
+
+        .variant-options label {
+            margin-right: 1rem;
+        }
+
+        .rating {
+            font-size: 1.2rem;
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+
+        .availability {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .in-stock {
+            color: green;
+        }
+
+        .out-of-stock {
+            color: red;
+        }
+
+        .review-section {
+            margin-top: 3rem;
+        }
+
+        .review-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .review-rating {
+            color: #ffc107;
+        }
+
+        .specifications {
+            margin-top: 2rem;
+        }
+
+        .delivery-options {
+            margin-top: 2rem;
+        }
+
+        .delivery-option {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .delivery-option:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allensLogo-dqgBtkSOk3e21If9itzi4vRxfowbQD.png" alt="Allen's Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Electronics</a></li>
+                            <li><a class="dropdown-item" href="#">Computers</a></li>
+                            <li><a class="dropdown-item" href="#">Smart Home</a></li>
+                            <li><a class="dropdown-item" href="#">Arts & Crafts</a></li>
+                            <li><a class="dropdown-item" href="#">Baby</a></li>
+                            <li><a class="dropdown-item" href="#">Women's Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion For Girls</a></li>
+                            <li><a class="dropdown-item" href="#">Fashion For Boys</a></li>
+                            <li><a class="dropdown-item" href="#">Luxury</a></li>
+                            <li><a class="dropdown-item" href="#">Luggage</a></li>
+                            <li><a class="dropdown-item" href="#">Beauty & Personal Care</a></li>
+                            <li><a class="dropdown-item" href="#">Health & Household</a></li>
+                            <li><a class="dropdown-item" href="#">Pet Supplies</a></li>
+                            <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+                            <li><a class="dropdown-item" href="#">Tools & Home Improvement</a></li>
+                            <li><a class="dropdown-item" href="#">Sports & Outdoors</a></li>
+                            <li><a class="dropdown-item" href="#">Toys & Games</a></li>
+                            <li><a class="dropdown-item" href="#">Automotive</a></li>
+                            <li><a class="dropdown-item" href="#">Animex</a></li>
+                            <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                            <li><a class="dropdown-item" href="#">Shisha Haven</a></li>
+                            <li><a class="dropdown-item" href="#">420 Store</a></li>
+                            <li><a class="dropdown-item" href="#">Gadgets & Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Gifts & Occasions</a></li>
+                            <li><a class="dropdown-item" href="#">Adult Products</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../deals-allens/deals-allens.html">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-allens.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact-allens/contact-allens.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="search-form d-flex" action="../search-allens/search-allens.html" method="GET">
+                    <input class="search-input form-control me-2" type="search" name="query" placeholder="Search products..." aria-label="Search">
+                </form>
+                <div class="nav-icons">
+                    <a href="../profile-allens/profile-allens.html" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="../cart-allens/cart-allens.html" class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-section">
+        <div class="container">
+            <div id="loading">Loading product details...</div>
+            <div id="error"></div>
+            <div id="productDetails" style="display: none;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="productCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Carousel items will be dynamically added here -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 id="productTitle" class="product-title"></h1>
+                        <div id="productRating" class="rating"></div>
+                        <p id="productPrice" class="product-price"></p>
+                        <p id="productAvailability" class="availability"></p>
+                        <p id="productDescription" class="product-description"></p>
+                        <div id="variantOptions" class="variant-options">
+                            <!-- Variant options will be dynamically added here -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Quantity:</label>
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary" type="button" id="decreaseQuantity">-</button>
+                                <input type="number" id="quantity" class="form-control text-center" min="1" value="1">
+                                <button class="btn btn-outline-secondary" type="button" id="increaseQuantity">+</button>
+                            </div>
+                            <small id="quantityAvailable" class="form-text text-muted"></small>
+                        </div>
+                        <div class="d-flex gap-2 mb-3">
+                            <button id="addToCartBtn" class="btn btn-add-to-cart">Add to Cart</button>
+                            <button id="buyNowBtn" class="btn btn-buy-now">Buy Now</button>
+                        </div>
+                        <div id="productFeatures" class="product-features">
+                            <!-- Features will be dynamically added here -->
+                        </div>
+                        <div id="productSpecifications" class="specifications">
+                            <h3>Specifications</h3>
+                            <!-- Specifications will be dynamically added here -->
+                        </div>
+                        <div id="deliveryOptions" class="delivery-options">
+                            <h3>Delivery Options</h3>
+                            <!-- Delivery options will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+                <div id="customerReviews" class="mt-5">
+                    <h3>Customer Reviews</h3>
+                    <div id="reviewsContainer">
+                        <!-- Reviews will be dynamically added here -->
+                    </div>
+                    <button id="addReviewBtn" class="btn btn-primary mt-3">Write a Review</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allensLogo-dqgBtkSOk3e21If9itzi4vRxfowbQD.png" alt="Allen's Logo" class="mb-3" style="height: 30px;">
+                    <p>Your one-stop shop for amazing products and unbeatable deals.</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html"><i class="fas fa-angle-right me-2"></i>About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-angle-right me-2"></i>Contact</a></li>
+                        <li><a href="faqs.html"><i class="fas fa-angle-right me-2"></i>FAQs</a></li>
+                        <li><a href="shipping.html"><i class="fas fa-angle-right me-2"></i>Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="returns.html"><i class="fas fa-angle-right me-2"></i>Returns</a></li>
+                        <li><a href="track-order.html"><i class="fas fa-angle-right me-2"></i>Track Order</a></li>
+                        <li><a href="size-guide.html"><i class="fas fa-angle-right me-2"></i>Size Guide</a></li>
+                        <li><a href="gift-cards.html"><i class="fas fa-angle-right me-2"></i>Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <p>&copy; 2024 Allen's. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productDetails = document.getElementById('productDetails');
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+    
+            function getUrlParameter(name) {
+                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                const results = regex.exec(location.search);
+                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+            }
+    
+            const productId = getUrlParameter('id');
+    
+            if (!productId) {
+                error.textContent = 'Product ID not found in URL.';
+                error.style.display = 'block';
+                loading.style.display = 'none';
+                return;
+            }
+    
+            fetch('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/products-I8aa34oRCok26I3SK6HoX2fqsY4M5L.json')
+                .then(response => response.json())
+                .then(data => {
+                    const product = data.productDetails.find(p => p.id.toString() === productId);
+                    if (!product) {
+                        error.textContent = 'Product not found.';
+                        error.style.display = 'block';
+                        loading.style.display = 'none';
+                        return;
+                    }
+    
+                    document.getElementById('productTitle').textContent = product.name;
+                    document.getElementById('productPrice').textContent = `${product.currency} ${product.price.toFixed(2)}`;
+                    document.getElementById('productDescription').textContent = product.description;
+    
+                    // Add rating
+                    const ratingElement = document.getElementById('productRating');
+                    const fullStars = Math.floor(product.rating);
+                    const hasHalfStar = product.rating % 1 !== 0;
+                    ratingElement.innerHTML = `
+                        ${'<i class="fas fa-star"></i>'.repeat(fullStars)}
+                        ${hasHalfStar ? '<i class="fas fa-star-half-alt"></i>' : ''}
+                        ${'<i class="far fa-star"></i>'.repeat(5 - fullStars - (hasHalfStar ? 1 : 0))}
+                        <span class="ms-2">${product.rating.toFixed(1)}</span>
+                    `;
+
+                    // Add availability
+                    const availabilityElement = document.getElementById('productAvailability');
+                    availabilityElement.textContent = product.quantity > 0 ? 'In Stock' : 'Out of Stock';
+                    availabilityElement.className = `availability ${product.quantity > 0 ? 'in-stock' : 'out-of-stock'}`;
+    
+                    const carouselInner = document.querySelector('.carousel-inner');
+                    product.image.forEach((image, index) => {
+                        const carouselItem = document.createElement('div');
+                        carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                        carouselItem.innerHTML = `<img src="${image}" class="d-block w-100" alt="${product.name} - Image ${index + 1}">`;
+                        carouselInner.appendChild(carouselItem);
+                    });
+    
+                    const featuresContainer = document.getElementById('productFeatures');
+                    product.features.forEach(feature => {
+                        const featureElement = document.createElement('div');
+                        featureElement.className = 'feature-item';
+                        featureElement.innerHTML = `<i class="fas ${feature.icon} feature-icon"></i><span>${feature.text}</span>`;
+                        featuresContainer.appendChild(featureElement);
+                    });
+
+                    // Add specifications
+                    const specificationsContainer = document.getElementById('productSpecifications');
+                    Object.entries(product.specifications).forEach(([key, value]) => {
+                        const specElement = document.createElement('p');
+                        specElement.innerHTML = `<strong>${key}:</strong> ${value}`;
+                        specificationsContainer.appendChild(specElement);
+                    });
+
+                    // Add delivery options
+                    const deliveryOptionsContainer = document.getElementById('deliveryOptions');
+                    product.delivery_options.forEach(option => {
+                        const optionElement = document.createElement('div');
+                        optionElement.className = 'delivery-option';
+                        optionElement.innerHTML = `
+                            <h4>${option.method}</h4>
+                            <p>Estimated delivery time: ${option.time}</p>
+                            <p>Cost: ${product.currency} ${option.cost.toFixed(2)}</p>
+                        `;
+                        deliveryOptionsContainer.appendChild(optionElement);
+                    });
+
+                    // Set up quantity input
+                    const quantityInput = document.getElementById('quantity');
+                    quantityInput.max = product.quantity;
+
+                    const decreaseQuantityBtn = document.getElementById('decreaseQuantity');
+                    const increaseQuantityBtn = document.getElementById('increaseQuantity');
+                    const quantityAvailable = document.getElementById('quantityAvailable');
+
+                    function updateQuantityAvailable() {
+                        quantityAvailable.textContent = `${product.quantity - quantityInput.value} available`;
+                    }
+
+                    decreaseQuantityBtn.addEventListener('click', () => {
+                        if (quantityInput.value > 1) {
+                            quantityInput.value = parseInt(quantityInput.value) - 1;
+                            updateQuantityAvailable();
+                        }
+                    });
+
+                    increaseQuantityBtn.addEventListener('click', () => {
+                        if (quantityInput.value < product.quantity) {
+                            quantityInput.value = parseInt(quantityInput.value) + 1;
+                            updateQuantityAvailable();
+                        }
+                    });
+
+                    quantityInput.addEventListener('change', () => {
+                        if (quantityInput.value < 1) {
+                            quantityInput.value = 1;
+                        } else if (quantityInput.value > product.quantity) {
+                            quantityInput.value = product.quantity;
+                        }
+                        updateQuantityAvailable();
+                    });
+
+                    updateQuantityAvailable();
+
+                    // Add reviews
+                    const reviewsContainer = document.getElementById('reviewsContainer');
+                    const addReviewBtn = document.getElementById('addReviewBtn');
+
+                    function displayReviews() {
+                        reviewsContainer.innerHTML = '';
+                        if (product.reviews && product.reviews.length > 0) {
+                            product.reviews.forEach(review => {
+                                const reviewElement = document.createElement('div');
+                                reviewElement.className = 'review-item mb-3 p-3 border rounded';
+                                reviewElement.innerHTML = `
+                                    <div class="d-flex justify-content-between">
+                                        <h5>${review.author}</h5>
+                                        <div class="rating">
+                                            ${'<i class="fas fa-star text-warning"></i>'.repeat(review.rating)}
+                                            ${'<i class="far fa-star text-warning"></i>'.repeat(5 - review.rating)}
+                                        </div>
+                                    </div>
+                                    <p>${review.comment}</p>
+                                `;
+                                reviewsContainer.appendChild(reviewElement);
+                            });
+                        } else {
+                            reviewsContainer.innerHTML = '<p>No reviews yet. Be the first to review this product!</p>';
+                        }
+                    }
+
+                    addReviewBtn.addEventListener('click', () => {
+                        // In a real application, this would open a modal or navigate to a review form
+                        alert('This would open a review form in a real application.');
+                    });
+
+                    displayReviews();
+
+                    productDetails.style.display = 'block';
+                    loading.style.display = 'none';
+    
+                    document.title = `${product.name} - Allen's`;
+    
+                    const addToCartBtn = document.getElementById('addToCartBtn');
+                    addToCartBtn.addEventListener('click', function() {
+                        const quantity = parseInt(quantityInput.value);
+                        alert(`Added ${quantity} ${product.name}(s) to your cart!`);
+                    });
+
+                    const buyNowBtn = document.getElementById('buyNowBtn');
+                    buyNowBtn.addEventListener('click', function() {
+                        const quantity = parseInt(quantityInput.value);
+                        alert(`Proceeding to checkout for ${quantity} ${product.name}(s)!`);
+                    });
+    
+                })
+                .catch(() => {
+                    error.textContent = 'Failed to load product details.';
+                    error.style.display = 'block';
+                    loading.style.display = 'none';
+                });
+        });
+    </script>
+</body>
+</html>

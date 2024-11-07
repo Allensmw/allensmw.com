@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #FF4B38;
+    --secondary-color: #2A2A2A;
+    --accent-color: #FF6B6B;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-brand {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.navbar-brand img {
+    height: 35px;
+}
+
+.nav-link {
+    color: #333 !important;
+    font-size: 1rem;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 10px;
+}
+
+.footer .social-links a:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px) scale(1.1);
+}
+
+.track-order-section {
+    padding: 4rem 0;
+}
+
+.track-order-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+#trackingResult {
+    margin-top: 2rem;
+    display: none;
+}
+
+#trackingSteps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    position: relative;
+}
+
+#trackingSteps::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+    z-index: 1;
+}
+
+.tracking-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.tracking-step-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.tracking-step.completed .tracking-step-icon {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+}
+
+.tracking-step.current .tracking-step-icon {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.tracking-step-label {
+    font-size: 0.8rem;
+    color: #666;
+    max-width: 80px;
+}
+
+.tracking-step.completed .tracking-step-label,
+.tracking-step.current .tracking-step-label {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    margin-top: 1rem;
+}
+
+/*Hover Effect Code*/
+.hero .btn-light {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero .btn-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}

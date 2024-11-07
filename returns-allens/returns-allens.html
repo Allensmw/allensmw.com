@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns - Allen's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="../allensIcon.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #FF4B38;
+            --secondary-color: #2A2A2A;
+            --accent-color: #FF6B6B;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .navbar {
+            background: #ffffff;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar-brand {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 2rem;
+        }
+
+        .navbar-brand img {
+            height: 35px;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-size: 1rem;
+            padding: 0.5rem 1rem !important;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 10px;
+        }
+
+        .footer .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px) scale(1.1);
+        }
+        
+        .returns-section {
+            padding: 4rem 0;
+        }
+
+        .returns-policy {
+            margin-bottom: 2rem;
+        }
+
+        .returns-steps {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .returns-steps li {
+            margin-bottom: 1rem;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .returns-steps li:before {
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../allensLogo.png" alt="Allen's Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about-allens/about-allens.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact-allens/contact-allens.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="returns-section">
+        <div class="container">
+            <h1 class="text-center mb-5">Returns Policy</h1>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="returns-policy">
+                        <p>We want you to be completely satisfied with your purchase. If you're not happy with your order, we offer a hassle-free 30-day return policy for most items.</p>
+                    </div>
+                    <h3>How to Return an Item:</h3>
+                    <ol class="returns-steps">
+                        <li>Log into your account and go to your order history.</li>
+                        <li>Select the item you wish to return and choose a reason for the return.</li>
+                        <li>Print the prepaid return label provided.</li>
+                        <li>Pack the item securely in its original packaging if possible.</li>
+                        <li>Attach the return label to your package.</li>
+                        <li>Drop off the package at your nearest post office or schedule a pickup.</li>
+                    </ol>
+                    <div class="mt-4">
+                        <h3>Return Conditions:</h3>
+                        <ul>
+                            <li>Items must be unused, unworn, and in the same condition as received.</li>
+                            <li>Items must be in the original packaging.</li>
+                            <li>Sale items are final and cannot be returned unless defective.</li>
+                            <li>Certain items, such as intimates and personalized products, are not eligible for return.</li>
+                        </ul>
+                    </div>
+                    <p class="mt-4">
+                        Once we receive your return, please allow 5-7 business days for processing. Refunds will be issued to the original payment method.
+                    </p>
+                    <p>
+                        If you have any questions about our return policy, please <a href="../contact-allens/contact-allens.html">contact our customer service team</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="../allensLogo.png" alt="Allen's Logo" class="mb-3" style="height: 30px;">
+                    <p>Your one-stop shop for amazing products and unbeatable deals.</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../about-allens/about-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>About Us</a></li>
+                        <li><a href="../contact-allens/contact-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Contact</a></li>
+                        <li><a href="../faqs-allens/faqs-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>FAQs</a></li>
+                        <li><a href="../shipping-allens/shipping-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="returns-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Returns</a></li>
+                        <li><a href="../trackorder/trackorder.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Track Order</a></li>
+                        <li><a href="../size-guide/size-guide.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Size Guide</a></li>
+                        <li><a href="../gift-cards/gift-cards.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/allensmw/" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/allens_mw/" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/allens_mw/" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@allens_mw"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <p>&copy; 2024 Allen's Malawi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

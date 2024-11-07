@@ -1,0 +1,485 @@
+{
+    "productDetails": [
+        {
+            "id": "1",
+            "name": "Wireless Headphones",
+            "price": 12000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (1).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "80g"
+            },
+            "rating": 4.3,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "2",
+            "name": "Cargo Shorts",
+            "price": 15000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (2).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "80g"
+            },
+            "rating": 4.5,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "3",
+            "name": "Spiderman Keychains",
+            "price": 6000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (3).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "80g"
+            },
+            "rating": 4.3,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "4",
+            "name": "Fashion Handbag",
+            "price": 12000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (4).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "180g"
+            },
+            "rating": 4.8,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "5",
+            "name": "Cute hair Piece",
+            "price": 3500,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (6).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "80g"
+            },
+            "rating": 4.4,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "6",
+            "name": "Carhartt Sidebags",
+            "price": 14000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (5).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "200g"
+            },
+            "rating": 5,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "7",
+            "name": "Airpods Phonecase",
+            "price": 6000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (7).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "50g"
+            },
+            "rating": 4,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "8",
+            "name": "Earbuds",
+            "price": 15000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (8).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "210g"
+            },
+            "rating": 4.2,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "9",
+            "name": "Gold Playing Cards",
+            "price": 12000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (9).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "100g"
+            },
+            "rating": 4.6,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "10",
+            "name": "Room Moon Light",
+            "price": 14000,
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/items/items (10).jpg"
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "250g"
+            },
+            "rating": 5,
+            "quantity": 10,
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "featuredProducts"
+        },
+        {
+            "id": "11", 
+            "name": "Laptop 1", 
+            "price": 400000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (1).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "12", 
+            "name": "Laptop 2", 
+            "price": 450000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (2).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "13", 
+            "name": "Laptop 3", 
+            "price": 600000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (3).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "14", 
+            "name": "Laptop 4", 
+            "price": 720000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (4).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "15", 
+            "name": "Laptop 5", 
+            "price": 610000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (5).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "16", 
+            "name": "Laptop 6", 
+            "price": 540000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (6).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "17", 
+            "name": "Laptop 7", 
+            "price": 470000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (7).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "18", 
+            "name": "Laptop 8", 
+            "price": 70000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (8).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+        {
+            "id": "19", 
+            "name": "Laptop 9", 
+            "price": 475000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (9).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics" 
+        },
+
+        {
+            "id": "20", 
+            "name": "Laptop 10", 
+            "price": 600000, 
+            "currency": "MWK",
+            "description": " ",
+            "image": [
+                "../images/laptops/laptop (10).jpg" 
+            ],
+            "features": [
+                { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
+                { "icon": "fa-battery-full", "text": "30-hour battery life" }
+            ],
+            "specifications": {
+                "weight": "1kg" 
+            },
+            "rating": 5,
+            "quantity": 2, 
+            "delivery_options": [
+                { "method": "Standard Shipping", "time": "Same Delivery", "cost": 2000 },
+                { "method": "Express Shipping", "time": "Next Day Delivery", "cost": 1500 }
+            ],
+            "tag": "electronics"
+        }
+    ]
+}
