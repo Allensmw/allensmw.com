@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cards - Allen's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/gift-cards.css">
+    <link rel="icon" href="../allensIcon.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../allensLogo.png" alt="Allen's Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about-allens/about-allens.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact-allens/contact-allens.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="gift-cards-section">
+        <div class="container">
+            <h1 class="text-center mb-5">Gift Cards</h1>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-center mb-4">Give the gift of choice with Allen's gift cards. Perfect for birthdays, holidays, or any special occasion!</p>
+                    <div class="row" id="giftCardOptions">
+                        <div class="col-md-6 mb-4">
+                            <div class="gift-card" data-amount="25">
+                                <h3>$25 Gift Card</h3>
+                                <p>The perfect small gift or stocking stuffer.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="gift-card" data-amount="50">
+                                <h3>$50 Gift Card</h3>
+                                <p>Great for friends and family.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="gift-card" data-amount="100">
+                                <h3>$100 Gift Card</h3>
+                                <p>Ideal for those special someones.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="gift-card" data-amount="custom">
+                                <h3>Custom Amount</h3>
+                                <p>Choose your own gift card amount.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="customAmountInput" class="mb-4">
+                        <label for="customAmount" class="form-label">Enter custom amount:</label>
+                        <input type="number" id="customAmount" class="form-control" min="10" max="500" step="5" placeholder="Enter amount (min $10, max $500)">
+                    </div>
+                    <form id="purchaseForm">
+                        <h3 class="mb-3">Gift Card Details</h3>
+                        <div class="mb-3">
+                            <label for="recipientName" class="form-label">Recipient's Name</label>
+                            <input type="text" class="form-control" id="recipientName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="recipientEmail" class="form-label">Recipient's Email</label>
+                            <input type="email" class="form-control" id="recipientEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Personal Message (optional)</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Purchase Gift Card</button>
+                    </form>
+                    <div id="confirmationMessage"></div>
+                    <div class="mt-5">
+                        <h3>Gift Card Terms & Conditions</h3>
+                        <ul>
+                            <li>Gift cards are valid for 12 months from the date of purchase.</li>
+                            <li>Gift cards can be used for online and in-store purchases.</li>
+                            <li>Gift cards cannot be redeemed for cash or returned for a refund.</li>
+                            <li>Lost or stolen gift cards cannot be replaced.</li>
+                            <li>Gift cards are non-transferable and cannot be resold.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="../allensLogo.png" alt="Allen's Logo" class="mb-3" style="height: 30px;">
+                    <p>Your one-stop shop for amazing products and unbeatable deals.</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../about-allens/about-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>About Us</a></li>
+                        <li><a href="../contact-allens/contact-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Contact</a></li>
+                        <li><a href="../faqs-allens/faqs-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>FAQs</a></li>
+                        <li><a href="../shipping-allens/shipping-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../returns-allens/returns-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Returns</a></li>
+                        <li><a href="../trackorder/trackorder.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Track Order</a></li>
+                        <li><a href="../size-guide/size-guide.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Size Guide</a></li>
+                        <li><a href="gift-cards.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/allensmw/" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/allens_mw/" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/allens_mw/" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@allens_mw"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <p>&copy; 2024 Allen's Malawi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/gift-cards.js"></script>
+</body>
+</html>
