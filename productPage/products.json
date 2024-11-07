@@ -7,7 +7,7 @@
             "currency": "MWK",
             "description": " ",
             "image": [
-                "../images/items/items (1).jpg"
+                "https://github.com/Allensmw/allensmw.com/blob/main/images/items/items%20(1).jpg"
             ],
             "features": [
                 { "icon": "fa-bluetooth", "text": "Bluetooth 5.0 connectivity" },
