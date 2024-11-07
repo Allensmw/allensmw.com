@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation | Allen's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #FF4B38;
+            --secondary-color: #2A2A2A;
+            --accent-color: #FF6B6B;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .logo-banner {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .logo-banner img {
+            height: 50px;
+        }
+
+        .checkout-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .progress-tracker {
+            position: relative;
+            margin-right: 2rem;
+        }
+
+        .progress-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .progress-step::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 30px;
+            bottom: 0;
+            width: 2px;
+            background-color: #e0e0e0;
+        }
+
+        .progress-step:last-child::before {
+            display: none;
+        }
+
+        .progress-step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            color: #333;
+            font-weight: bold;
+            margin-right: 1rem;
+            z-index: 1;
+        }
+
+        .progress-step.active .progress-step-number {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .progress-step-label {
+            font-weight: 500;
+        }
+
+        .progress-step.active .progress-step-label {
+            color: var(--primary-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .order-details {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-banner">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allensLogo-dqgBtkSOk3e21If9itzi4vRxfowbQD.png" alt="Allen's Logo">
+    </div>
+
+    <div class="checkout-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="progress-tracker">
+                    <div class="progress-step">
+                        <div class="progress-step-number">1</div>
+                        <div class="progress-step-label">Shipping</div>
+                    </div>
+                    <div class="progress-step">
+                        <div class="progress-step-number">2</div>
+                        <div class="progress-step-label">Payment</div>
+                    </div>
+                    <div class="progress-step active">
+                        <div class="progress-step-number">3</div>
+                        <div class="progress-step-label">Confirmation</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h1 class="text-3xl font-bold mb-4">Checkout</h1>
+                <div class="text-center mb-4">
+                    <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                    <h2 class="text-2xl font-semibold mt-2">Order Confirmed!</h2>
+                    <p>Thank you for your purchase. Your order has been successfully placed.</p>
+                </div>
+
+                <div class="order-details">
+                    <h3 class="text-xl font-semibold mb-2">Order Details</h3>
+                    <p><strong>Order Number:</strong> #12345678</p>
+                    <p><strong>Order Date:</strong> April 6, 2024</p>
+                    <p><strong>Estimated Delivery:</strong> April 10-12, 2024</p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">Items Ordered</h4>
+                    <div class="order-item">
+                        <span>Smart Watch</span>
+                        <span>$129.99</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Wireless Headphones</span>
+                        <span>$89.99</span>
+                    </div>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">Order Summary</h4>
+                    <div class="order-item">
+                        <span>Subtotal</span>
+                        <span>$219.98</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Shipping</span>
+                        <span>$10.00</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Tax</span>
+                        <span>$22.00</span>
+                    </div>
+                    <hr>
+                    <div class="order-item font-bold">
+                        <span>Total</span>
+                        <span>$251.98</span>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="index.html" class="btn btn-primary">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

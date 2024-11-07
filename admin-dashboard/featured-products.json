@@ -1,0 +1,75 @@
+{
+    "featuredProducts": [
+      {
+        "id": 1,
+        "name": "Anime Figurine",
+        "price": 16000,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1614583225154-5fcdda07019e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      },
+      {
+        "id": 2,
+        "name": "Minimalist Watch",
+        "price": 45000,
+        "rating": 4.8,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1999&q=80"
+      },
+      {
+        "id": 3,
+        "name": "Elegant Watch",
+        "price": 55000,
+        "rating": 4.2,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1999&q=80"
+      },
+      {
+        "id": 4,
+        "name": "Wireless Earbuds",
+        "price": 35000,
+        "rating": 4.7,
+        "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+      },
+      {
+        "id": 5,
+        "name": "Gaming Headset",
+        "price": 29000,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1588436706487-9d55d73a39e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80"
+      },
+      {
+        "id": 6,
+        "name": "Bluetooth Speaker",
+        "price": 25000,
+        "rating": 4.4,
+        "image": "https://images.unsplash.com/photo-1561839561-8024a7a463c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80"
+      },
+      {
+        "id": 7,
+        "name": "Fitness Tracker",
+        "price": 18000,
+        "rating": 4.3,
+        "image": "https://images.unsplash.com/photo-1556229012-f9d63e2fc68a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80"
+      },
+      {
+        "id": 8,
+        "name": "Smartphone Stand",
+        "price": 12000,
+        "rating": 4.1,
+        "image": "https://images.unsplash.com/photo-1551232868-21d66a7b46be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80"
+      },
+      {
+        "id": 9,
+        "name": "Laptop Backpack",
+        "price": 32000,
+        "rating": 4.5,
+        "image": "https://images.unsplash.com/photo-1581719416356-2d8d2cd74034?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1951&q=80"
+      },
+      {
+        "id": 10,
+        "name": "Portable Charger",
+        "price": 15000,
+        "rating": 4.6,
+        "image": "https://images.unsplash.com/photo-1555617117-08ae07096e32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80"
+      }
+    ]
+  }
+  

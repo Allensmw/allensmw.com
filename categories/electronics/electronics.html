@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics - Allen's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/electronics.css">
+    <link rel="icon" href="../../allensIcon.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../allensLogo.png" alt="Allen's Logo" style="height: 35px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu scrollable-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+                            <li><a class="dropdown-item" href="../computers/computer.html">Computers</a></li>
+                            <li><a class="dropdown-item" href="../smart-home/smart-home.html">Smart Home</a></li>
+                            <li><a class="dropdown-item" href="../arts-crafts/arts-crafts.html">Arts & Crafts</a></li>
+                            <li><a class="dropdown-item" href="../baby/baby.html">Baby</a></li>
+                            <li><a class="dropdown-item" href="../womens-fashion/womens-fashion.html">Women's Fashion</a></li>
+                            <li><a class="dropdown-item" href="../mens-fashion/mens-fashion.html">Men's Fashion</a></li>
+                            <li><a class="dropdown-item" href="../girls-fashion/girls-fashion.html">Fashion For Girls</a></li>
+                            <li><a class="dropdown-item" href="../boys-fashion/boys-fashion.html">Fashion For Boys</a></li>
+                            <li><a class="dropdown-item" href="../luxury/luxury.html">Luxury</a></li>
+                            <li><a class="dropdown-item" href="../luggage/luggage.html">Luggage</a></li>
+                            <li><a class="dropdown-item" href="../beauty-personal-care/beauty-personal-care.html">Beauty & Personal Care</a></li>
+                            <li><a class="dropdown-item" href="../health-household/health-household.html">Health & Household</a></li>
+                            <li><a class="dropdown-item" href="../pet-supplies/pet-supplies.html">Pet Supplies</a></li>
+                            <li><a class="dropdown-item" href="../home-kitchen/home-kitchen.html">Home & Kitchen</a></li>
+                            <li><a class="dropdown-item" href="../tools-home-improvement/tools-home-improvement.html">Tools & Home Improvement</a></li>
+                            <li><a class="dropdown-item" href="../sports-outdoors/sports-outdoors.html">Sports & Outdoors</a></li>
+                            <li><a class="dropdown-item" href="../toys-games/toys-games.html">Toys & Games</a></li>
+                            <li><a class="dropdown-item" href="../automotive/automotive.html">Automotive</a></li>
+                            <li><a class="dropdown-item" href="../animex/animex.html">Animex</a></li>
+                            <li><a class="dropdown-item" href="../sneakers/sneakers.html">Sneakers</a></li>
+                            <li><a class="dropdown-item" href="../shisha-haven/shisha-haven.html">Shisha Haven</a></li>
+                            <li><a class="dropdown-item" href="../420-store/420-store.html">420 Store</a></li>
+                            <li><a class="dropdown-item" href="../gadgets-accessories/gadgets-accessories.html">Gadgets & Accessories</a></li>
+                            <li><a class="dropdown-item" href="../gifts-occasions/gifts-occasions.html">Gifts & Occasions</a></li>
+                            <li><a class="dropdown-item" href="../adult-products/adult-products.html">Adult Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../deals-allens/deals-allens.html">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../about-allens/about-allens.html">About</a>
+                    </li>
+                </ul>
+                <form class="search-form d-flex">
+                    <input class="search-input form-control me-2" type="search" placeholder="Search electronics..." aria-label="Search">
+                </form>
+                <div class="nav-icons">
+                    <a href="../../profile-allens/profile-allens.html" class="nav-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="../../cart-allens/cart-allens.html" class="nav-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <div class="container text-center position-relative">
+            <h1 class="display-4 fw-bold mb-4">Electronics</h1>
+            <p class="lead mb-4">Discover the latest gadgets and tech innovations</p>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <h3>Filters</h3>
+                    <div class="mb-3">
+                        <h5>Price Range</h5>
+                        <input type="range" class="form-range" min="0" max="1000000" step="50" id="priceRange">
+                        <div class="d-flex justify-content-between">
+                            <span id="priceRangeValue">MWK 0 - MWK 3.5M</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h5>Brand</h5>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="Apple" id="brandApple" data-filter="brand">
+                            <label class="form-check-label" for="brandApple">
+                                Apple
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="Samsung" id="brandSamsung" data-filter="brand">
+                            <label class="form-check-label" for="brandSamsung">
+                                Samsung
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="Sony" id="brandSony" data-filter="brand">
+                            <label class="form-check-label" for="brandSony">
+                                Sony
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="LG" id="brandLG" data-filter="brand">
+                            <label class="form-check-label" for="brandLG">
+                                LG
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <h5>Category</h5>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="Smartphone" id="categorySmartphone" data-filter="category">
+                            <label class="form-check-label" for="categorySmartphone">
+                                Smartphone
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="TV" id="categoryTV" data-filter="category">
+                            <label class="form-check-label" for="categoryTV">
+                                TV
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="Audio" id="categoryAudio" data-filter="category">
+                            <label class="form-check-label" for="categoryAudio">
+                                Audio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" value="Gaming" id="categoryGaming" data-filter="category">
+                            <label class="form-check-label" for="categoryGaming">
+                                Gaming
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row" id="product-list">
+                        <!-- Product cards will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <img src="../../allensLogo.png" alt="Allen's Logo" class="mb-3" style="height: 30px;">
+                    <p>Your one-stop shop for amazing products and unbeatable deals.</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../../about-allens/about-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>About Us</a></li>
+                        <li><a href="../../contact-allens/contact-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Contact</a></li>
+                        <li><a href="../../faqs-allens/faqs-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>FAQs</a></li>
+                        <li><a href="../../shipping-allens/shipping-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../../returns-allens/returns-allens.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Returns</a></li>
+                        <li><a href="../../trackorder/trackorder.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Track Order</a></li>
+                        <li><a href="../../size-guide/size-guide.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Size Guide</a></li>
+                        <li><a href="../../gift-cards/gift-cards.html" class="text-white"><i class="fas fa-angle-right me-2"></i>Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="https://web.facebook.com/allensmw/" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/allens_mw/" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/allens_mw/" class="me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@allens_mw"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <p>&copy; 2024 Allen's Malawi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/electronics.js"></script>
+</body>
+</html>
