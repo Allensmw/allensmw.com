@@ -53,7 +53,7 @@ fetch('productPage/products.json')
                     <a href="productPage/productPage.html?id=${product.id}" class="text-decoration-none">
                         <div class="card product-card h-100 animate__animated animate__fadeIn" style="animation-delay: ${index * 0.2}s">
                             <div class="position-relative overflow-hidden">
-                                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                                <img src="${product.image[0]}" class="card-img-top" alt="${product.name}">
                                 <div class="position-absolute top-0 start-0 m-3">
                                     <span class="badge bg-primary">New</span>
                                 </div>
